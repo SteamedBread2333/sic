@@ -1,0 +1,45 @@
+{
+  "name": "smoking-intl-cli",
+  "version": "1.0.0",
+  "description": "Helps build locales",
+  "main": "./lib/index.js",
+  "bin": {
+    "sic": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SteamedBread2333/sic.git"
+  },
+  "keywords": [
+    "intl",
+    "intl-cli",
+    "locales"
+  ],
+  "author": "pipi",
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "commander": "^6.2.0",
+    "diff": "^7.0.0",
+    "eslint": "^9.0.0",
+    "figlet": "^1.5.0",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.21",
+    "open": "^7.3.0",
+    "ora": "^5.1.0",
+    "xlsx-js-style": "1.2.0"
+  },
+  "devDependencies": {
+    "crypto": "^1.0.1",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "xlsx-js-style": "1.2.0"
+  }
+}

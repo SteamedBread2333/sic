@@ -18,7 +18,7 @@ sic [options]
 
 ## Options
 ```
---version       Show version number
+-V --version    Show version number
 init            Init Work Space, Pulling Source Files
 gen:export      Generage Export File(.xlsx)
 gen:locales     Start import .xlsx File

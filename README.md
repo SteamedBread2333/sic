@@ -11,6 +11,20 @@ npm i smoking-intl-cli --save-dev
 npm i smoking-intl-cli -g
 ```
 
+## Usage
+```
+sic [options]
+```
+
+## Options
+```
+--version       Show version number
+init            Init Work Space, Pulling Source Files
+gen:export      Generage Export File(.xlsx)
+gen:locales     Start import .xlsx File
+langs           Show All Supported Languages
+```
+
 ## Config file
 Need create ```intl.config.ts``` in your project root directory.
 Type of ```intl.config.ts``` as below:

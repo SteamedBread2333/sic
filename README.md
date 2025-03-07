@@ -24,11 +24,11 @@ sic [options]
 
 ## Options
 ```
--V --version    Show version number
-init            Init Work Space, Pulling Source Files
-gen:export      Generage Export File(.xlsx)
-gen:locales     Start import .xlsx File
-langs           Show All Supported Languages
+-V --version          Show version number
+init                  Init Work Space, Pulling Source Files
+xlsx                  Generage Export File(.xlsx)
+ts                    Start import .xlsx File
+langs                 Show All Supported Languages
 ```
 
 ## Config file

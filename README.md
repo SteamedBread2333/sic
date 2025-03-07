@@ -29,8 +29,6 @@ langs           Show All Supported Languages
 Need create ```intl.config.ts``` in your project root directory.
 Type of ```intl.config.ts``` as below:
 ```typescript
-import { PathLike } from 'fs';
-
 export type languageCodes = [
   /** languageCodes start */
   "af-ZA", // Afrikaans (South Africa)
@@ -148,7 +146,7 @@ export type BaseSomkingIntl = {
   exportFilePath: string,
   // Name of the imported Excel file
   importFilePath: string,
-  // Supported language packages
+  // Supported language packages codes
   languages: LanguaheCodeScope,
   /**
    * @description Spreadsheet column array
@@ -163,10 +161,19 @@ export type BaseSomkingIntl = {
 }
 
 export type SomkingIntl = BaseSomkingIntl & {
+  /**
+   * plugins
+   */
   plugins?: {
-    collector?: PathLike,
-    spreader?: PathLike,
-  }
+    /**
+     * collector plugin path
+     */
+    collector?: PathLike;
+    /**
+     * spreader plugin path
+     */
+    spreader?: PathLike;
+  };
 }
 ```
 

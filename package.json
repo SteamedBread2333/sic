@@ -1,6 +1,6 @@
 {
   "name": "smoking-intl-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helps build locales",
   "main": "./lib/index.js",
   "bin": {

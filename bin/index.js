@@ -1,30 +1,33 @@
 #!/usr/bin/env node
 const program = require("commander");
-const { init, ['gen:export']: genExport, ['gen:locales']: genLocales, langs } = require("../lib/inquirer");
+const { init, xlsx, ts, langs } = require("../lib/inquirer");
+const readConfig = require("../lib/vendors/applyReadConfig");
+
+const config = readConfig('intl.config.ts');
 
 // Show package version
 program.version(require("../package.json").version);
 
 program.command("init")
 	.description("Init Work Space, Pulling Source Files")
-	.action(init);
+	.action(() => init(config));
 
-program.command("gen:export")
+program.command("xlsx")
 	.description("Generage Export File(.xlsx)")
 	.action(() => {
-		genExport();
+		xlsx(config);
 	});
 
-program.command("gen:locales")
-	.description("Start import .xlsx File")
+program.command("ts")
+	.description("Start import .xlsx File, and generate .ts files")
 	.action(() => {
-		genLocales();
+		ts(config);
 	});
 
 program.command("langs")
 	.description("Show All Supported Languages")
 	.action(() => {
-		langs()
+		langs(config)
 	});
 
 program.parse(process.argv);

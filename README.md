@@ -1,3 +1,9 @@
+<h1 align="center">
+  <br/>
+    <img src="https://github.com/user-attachments/assets/a76572b1-0c79-4562-86cc-67bf9dd40655" width="260"/>
+  <br/>
+</h1>
+
 # Smoking Intl CLI(sic) Frontend Internationalization Toolkit
 
 ## Install

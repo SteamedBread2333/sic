@@ -4,7 +4,7 @@
   <br/>
 </h1>
 
-# Smoking Intl CLI(sic) Frontend Internationalization Toolkit
+# Smoking I18n CLI(sic) Frontend Internationalization Toolkit
 
 ## Install
 

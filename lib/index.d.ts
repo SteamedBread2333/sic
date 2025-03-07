@@ -103,29 +103,29 @@ type Code = languageCodes[number];
 export type LanguaheCodeScope = Code[];
 
 export type BaseSomkingIntl = {
-  // 复制到工作区是需要忽略的文件夹
+  // Folders to be ignored when copying to the workspace
   ignoredFiles: string[],
-  // 宿主项目locales所在路径
+  // Path to the host project's locales
   originDir: string,
-  // 中间产物输出目录
-  targerDir: string,
-  // 工作区目录
+  // Directory for intermediate output
+  targetDir: string,
+  // Workspace directory
   spaceDir: string,
-  // 宿主项目locales复制到工作区的子目录
+  // Subdirectory in the workspace for copied host project locales
   sourceDir: string,
-  // 导出的excel 名
+  // Name of the exported Excel file
   exportFilePath: string,
-  // 导入的excel 名
+  // Name of the imported Excel file
   importFilePath: string,
-  // 需要支持的语言包
+  // Supported language packages codes
   languages: LanguaheCodeScope,
-  /** 
-   * @description 表格列阵
-   * @example 'zh-CN': [3, 2] 取值优先级：列3 > 列2; 'en-US: [1]' 取值 列1
+  /**
+   * @description Spreadsheet column array
+   * @example 'zh-CN': [3, 2] Priority order: column 3 > column 2; 'en-US: [1]' corresponds to column 1
    */
   columns: Partial<Record<Code | 'key', number[]>>,
   /**
-   * @description 表格模式
+   * @description Spreadsheet mode
    * @default 'multiple'
    */
   sheetMode?: 'single' | 'multiple',
@@ -133,15 +133,15 @@ export type BaseSomkingIntl = {
 
 export type SomkingIntl = BaseSomkingIntl & {
   /**
-   * 插件配置对象。
+   * plugins
    */
   plugins?: {
     /**
-     * 收集器插件的路径。
+     * collector plugin path
      */
     collector?: PathLike;
     /**
-     * 传播器插件的路径。
+     * spreader plugin path
      */
     spreader?: PathLike;
   };

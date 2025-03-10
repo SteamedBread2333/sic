@@ -4,7 +4,11 @@
   <br/>
 </h1>
 
-# Smoking I18n CLI(sic) Frontend Internationalization Toolkit
+[![npm version](https://img.shields.io/npm/v/smoking-intl-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/smoking-intl-cli)
+[![npm downloads](https://img.shields.io/npm/dt/smoking-intl-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/smoking-intl-cli)
+[![deps](https://img.shields.io/github/license/SteamedBread2333/sic.svg?style=for-the-badge)](https://www.npmjs.com/package/smoking-intl-cli)
+
+Smoking I18n CLI(sic) Frontend Internationalization Toolkit
 
 ## Install
 
@@ -58,3 +62,6 @@ export intlModule = {
   ...,
 }
 ```
+
+## License
+MIT

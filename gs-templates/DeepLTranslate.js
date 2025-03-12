@@ -1,5 +1,5 @@
 /* Please change the line below */
-const authKey = "b493b8ef-0176-215d-82fe-e28f182c9544:fx"; // Replace with your authentication key
+const authKey = "******:fx"; // Replace with your authentication key
 
 /* Change the line below to disable all translations. */
 const disableTranslations = false; // Set to true to stop translations.

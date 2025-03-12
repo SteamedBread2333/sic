@@ -1,11 +1,18 @@
 {
   "name": "smoking-intl-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helps build locales",
   "main": "./lib/index.js",
   "bin": {
     "sic": "./bin/index.js"
   },
+  "files": [
+    "bin",
+    "lib",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

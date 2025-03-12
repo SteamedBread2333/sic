@@ -49,7 +49,14 @@ Type of ```intl.config.ts``` as below:
 2. Table is code, easy to collaborate.
 
 ## Best Practices
-### When the "google translate" pre - fill function is enabled, `{cat}` may be translated into `{猫}` or other languages, which can affect template filling.
+
+1. Google sheet is recommended as the editor for exporting files
+
+The default `GoogleTranslate` service is used.
+`Iflytek` and `DeepL` [translation function templates](https://github.com/SteamedBread2333/sic/tree/main/gs-templates) are provided in the project, which can be easily configured and used through [Google workspace Apps-script](https://developers.google.com/apps-script).
+
+2. When the `GoogleTranslate` pre - fill function is enabled, `{cat}` may be translated into `{猫}` or other languages, which can affect template filling.
+  
 ```javascript
 // bad
 export intlModule = {

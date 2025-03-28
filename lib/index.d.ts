@@ -107,8 +107,6 @@ export type BaseSomkingIntl = {
   ignoredFiles: string[],
   // Path to the host project's locales
   originDir: string,
-  // Directory for intermediate output
-  targetDir: string,
   // Workspace directory
   spaceDir: string,
   // Subdirectory in the workspace for copied host project locales
